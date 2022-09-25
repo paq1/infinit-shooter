@@ -30,6 +30,9 @@ fn load_assets(
     let mur: Handle<Image> = asset_server.load("mur.png");
     loading_asset.0.push(mur.clone_untyped());
 
+    let mur: Handle<Image> = asset_server.load("player.png");
+    loading_asset.0.push(mur.clone_untyped());
+
     println!("Chargement des assets ...");
 }
 
@@ -51,6 +54,7 @@ fn check_assets_ready(
             // on ajoute nos resources
             let game_textures = GameTextures {
                 wall: asset_server.get_handle("mur.png"),
+                player: asset_server.get_handle("player.png"),
             };
 
             commands.insert_resource(game_textures);

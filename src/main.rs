@@ -1,6 +1,7 @@
 mod resources;
 mod states;
 mod plugins;
+mod component;
 
 use bevy::prelude::*;
 use crate::resources::{AssetsLoading, WinSize};
@@ -25,7 +26,7 @@ fn main() {
         .add_state(AppState::Loading)
         .add_plugin(LoadingPlugin)
         .add_plugin(InGamePlugin)
-        .add_plugin(DebugPlugin)
+        // .add_plugin(DebugPlugin)
         .run();
 }
 
