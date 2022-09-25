@@ -51,7 +51,7 @@ fn default_tilemap() -> Vec<&'static str> {
 
 fn create_tile_from_char(
     tile: char,
-    mut commands: &mut Commands,
+    commands: &mut Commands,
     coord: (f32, f32),
     game_textures: &Res<GameTextures>
 ) {
