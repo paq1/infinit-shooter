@@ -7,7 +7,8 @@ use crate::resources::{AssetsLoading, WinSize};
 use crate::states::AppState;
 use crate::plugins::{
     loading_asset_plugin::LoadingPlugin,
-    game_plugin::InGamePlugin
+    game_plugin::InGamePlugin,
+    debug_plugin::DebugPlugin
 };
 
 fn main() {
@@ -24,6 +25,7 @@ fn main() {
         .add_state(AppState::Loading)
         .add_plugin(LoadingPlugin)
         .add_plugin(InGamePlugin)
+        .add_plugin(DebugPlugin)
         .run();
 }
 

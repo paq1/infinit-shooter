@@ -50,8 +50,7 @@ fn check_assets_ready(
 
             // on ajoute nos resources
             let game_textures = GameTextures {
-                bg: asset_server.get_handle("bg.png"),
-                tile_mur: asset_server.get_handle("mur.png"),
+                wall: asset_server.get_handle("mur.png"),
             };
 
             commands.insert_resource(game_textures);

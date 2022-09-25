@@ -6,8 +6,7 @@ pub struct WinSize {
 }
 
 pub struct GameTextures {
-    pub bg: Handle<Image>,
-    pub tile_mur: Handle<Image>
+    pub wall: Handle<Image>
 }
 
 pub struct AssetsLoading(pub Vec<HandleUntyped>);
